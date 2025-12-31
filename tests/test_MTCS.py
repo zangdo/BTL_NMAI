@@ -46,6 +46,25 @@ def main(cfg: DictConfig):
     policy_1.load_state_dict(torch.load(cfg.white_checkpoint, map_location=device))
     policy_1.eval()
 
+    policy_2 = get_policy(
+        name=cfg.algo.name,
+        cfg=cfg.algo,
+        action_spec= env.action_spec,
+        observation_spec= env.observation_spec,
+        device= device,
+    )
+    policy_2.load_state_dict(torch.load(cfg.black_checkpoint1, map_location=device))
+    policy_2.eval()
+    
+    policy_3 = get_policy(
+        name=cfg.algo.name,
+        cfg=cfg.algo,
+        action_spec= env.action_spec,
+        observation_spec= env.observation_spec,
+        device= device,
+    )
+    policy_3.load_state_dict(torch.load(cfg.white_checkpoint1, map_location=device))
+    policy_3.eval()
 
     print("Models loaded. Starting MCTS vs PPO match...")
 
