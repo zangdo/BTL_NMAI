@@ -1,6 +1,6 @@
 # Hướng Dẫn Sử Dụng Project
 
-Dưới đây là hướng dẫn chi tiết cách cài đặt môi trường, huấn luyện (training) và chạy thử nghiệm (demo) cho các thuật toán RL (PPO, DQN, MCTS).
+Dưới đây là hướng dẫn chi tiết cách cài đặt môi trường, huấn luyện (training) và chạy thử nghiệm (demo) cho các thuật toán RL (PPO, DQN, MCTS). Hãy sử dụng python 3.10.x để tương thích thư viện 
 
 ## 1. Cài đặt môi trường
 
