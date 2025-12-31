@@ -34,3 +34,12 @@ muốn xem kết quả đấu nhau của các thuật toán
 cách 1: bật cách tiến trình demo cho các thuật toán rồi chơi song song đen trắng
 cách 2:  chạy python tests/test_MTCS.py để xem MCTS nghiền nát PPO như thế nào (còn về PPO vs DQN thì 100% PPO thắng nhé :) DQN kém lắm , ở đây t cho PPO 500 epoch + MCTS đấu với PPO 1000 epoch)
 
+
+link demoDQN :  
+https://drive.google.com/file/d/1b694Z-pzHnAu7qWIx4_vTBl0hkrza8Y_/view?usp=sharing
+link demoPPO: 
+https://drive.google.com/file/d/1b4Oftv-Yypyonh4lQlOJKYnx8sHZZ-WU/view?usp=sharing
+link demoMCTS:
+https://drive.google.com/file/d/1b1NmXKfcuQxDd4LtqNJKygfuueF8UtOR/view?usp=sharing
+
+
