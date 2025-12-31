@@ -41,7 +41,7 @@ import random
 from gomoku_rl.env import GomokuEnv
 import torch
 from tensordict import TensorDict
-from gomoku_rl.policy.MCTS import MCTS
+from gomoku_rl.policy.MCTS import MCTS,Node
 
 
 class Piece(enum.Enum):
@@ -143,6 +143,8 @@ class GomokuBoard(QWidget):
                 self.board[i][j] = Piece.EMPTY
 
         self._env.reset()
+        self.tensordict = self._env.reset()
+        self.mcts.root = Node(prior=0)
         self.latest_move = None
 
         if self.human_color == Piece.WHITE:
