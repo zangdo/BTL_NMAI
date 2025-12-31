@@ -1,0 +1,150 @@
+_wandb:
+    value:
+        cli_version: 0.21.4
+        e:
+            qk1u0u4trcq7rgkwoasy2mcsswu44z4s:
+                args:
+                    - device=cuda
+                    - wandb.mode=online
+                codePath: scripts\train_InRL.py
+                codePathLocal: scripts\train_InRL.py
+                cpu_count: 8
+                cpu_count_logical: 12
+                cudaVersion: "12.7"
+                disk:
+                    /:
+                        total: "487606710272"
+                        used: "196406165504"
+                email: zangdo20052014@gmail.com
+                executable: C:\Users\admin\.vscode\gomoku_rl\.venv\scripts\python.exe
+                git:
+                    commit: 86ca6ba23fe60cea77b3f23a474d413b4368963b
+                    remote: https://github.com/ngthtuvp2005/Gomoku.git
+                gpu: NVIDIA GeForce RTX 4050 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 2560
+                      memoryTotal: "6439305216"
+                      name: NVIDIA GeForce RTX 4050 Laptop GPU
+                      uuid: GPU-4a451990-68d0-d185-a517-a320e153c2e9
+                host: MSI
+                memory:
+                    total: "25456627712"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\admin\.vscode\gomoku_rl\scripts\train_InRL.py
+                python: CPython 3.10.0
+                root: C:\Users\admin\.vscode\gomoku_rl
+                startedAt: "2025-11-12T09:08:28.877006Z"
+                writerId: qk1u0u4trcq7rgkwoasy2mcsswu44z4s
+        m: []
+        python_version: 3.10.0
+        t:
+            "1":
+                - 1
+                - 41
+                - 50
+                - 105
+            "2":
+                - 1
+                - 41
+                - 50
+                - 105
+            "3":
+                - 14
+            "4": 3.10.0
+            "5": 0.21.4
+            "8":
+                - 3
+            "12": 0.21.4
+            "13": windows-amd64
+algo.annealing_num_steps:
+    value: 1000
+algo.batch_size:
+    value: 8192
+algo.buffer_device:
+    value: cpu
+algo.buffer_size:
+    value: 1000000
+algo.eps_end:
+    value: 0.1
+algo.eps_init:
+    value: 1
+algo.gamma:
+    value: 0.95
+algo.max_grad_norm:
+    value: 0.5
+algo.n_optim:
+    value: 8
+algo.name:
+    value: dqn
+algo.num_channels:
+    value: 32
+algo.num_residual_blocks:
+    value: 3
+algo.optimizer.kwargs.lr:
+    value: 0.0005
+algo.optimizer.name:
+    value: adam
+algo.target_update_interval:
+    value: 4
+augment:
+    value: false
+baseline.annealing_num_steps:
+    value: 1000
+baseline.batch_size:
+    value: 8192
+baseline.buffer_device:
+    value: cpu
+baseline.buffer_size:
+    value: 10000
+baseline.eps_end:
+    value: 0.1
+baseline.eps_init:
+    value: 1
+baseline.gamma:
+    value: 0.95
+baseline.max_grad_norm:
+    value: 0.5
+baseline.n_optim:
+    value: 8
+baseline.name:
+    value: dqn
+baseline.num_channels:
+    value: 32
+baseline.num_residual_blocks:
+    value: 3
+baseline.optimizer.kwargs.lr:
+    value: 0.0005
+baseline.optimizer.name:
+    value: adam
+baseline.target_update_interval:
+    value: 4
+black_checkpoint:
+    value: pretrained_models/15_15/dqn/0.pt
+board_size:
+    value: 15
+device:
+    value: cuda
+epochs:
+    value: 32000
+num_envs:
+    value: 512
+out_device:
+    value: cpu
+run_dir:
+    value: null
+save_interval:
+    value: 16000
+seed:
+    value: 0
+steps:
+    value: 4
+wandb.group:
+    value: 15_15_dqn_InRL
+wandb.mode:
+    value: online
+wandb.project:
+    value: gomoku_rl
+white_checkpoint:
+    value: pretrained_models/15_15/dqn/1.pt

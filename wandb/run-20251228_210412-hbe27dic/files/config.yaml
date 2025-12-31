@@ -1,0 +1,148 @@
+_wandb:
+    value:
+        cli_version: 0.21.4
+        e:
+            dkouxtsykquxcx0p6dafuoo8qntqtyzd:
+                codePath: scripts/train_InRL.py
+                codePathLocal: scripts/train_InRL.py
+                cpu_count: 8
+                cpu_count_logical: 16
+                cudaVersion: "12.8"
+                disk:
+                    /:
+                        total: "1964636102656"
+                        used: "1838042349568"
+                email: zangdo20052014@gmail.com
+                executable: /home/huongtt/miniconda3/envs/gomoku/bin/python
+                git:
+                    commit: fd926e636fd41f37771469a5139fd289c7efa146
+                    remote: https://github.com/ngthtuvp2005/Gomoku
+                gpu: NVIDIA RTX A6000
+                gpu_count: 2
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX A6000
+                      uuid: GPU-59430f48-5bbb-6fa3-1e1c-39b0fd176c69
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX A6000
+                      uuid: GPU-0cfe36fc-d9b3-83b6-0bb8-bcabf9bb8e3b
+                host: rtxa6000
+                memory:
+                    total: "134708801536"
+                os: Linux-6.8.0-87-generic-x86_64-with-glibc2.39
+                program: /home/huongtt/Gomoku/scripts/train_InRL.py
+                python: CPython 3.10.19
+                root: /home/huongtt/Gomoku
+                startedAt: "2025-12-28T14:04:12.709777Z"
+                writerId: dkouxtsykquxcx0p6dafuoo8qntqtyzd
+        m: []
+        python_version: 3.10.19
+        t:
+            "1":
+                - 1
+                - 41
+                - 50
+                - 105
+            "2":
+                - 1
+                - 41
+                - 50
+                - 105
+            "3":
+                - 14
+            "4": 3.10.19
+            "5": 0.21.4
+            "12": 0.21.4
+            "13": linux-x86_64
+algo.annealing_num_steps:
+    value: 1000
+algo.batch_size:
+    value: 8192
+algo.buffer_device:
+    value: cpu
+algo.buffer_size:
+    value: 100000
+algo.eps_end:
+    value: 0.1
+algo.eps_init:
+    value: 1
+algo.gamma:
+    value: 0.95
+algo.max_grad_norm:
+    value: 0.5
+algo.n_optim:
+    value: 8
+algo.name:
+    value: dqn
+algo.num_channels:
+    value: 64
+algo.num_residual_blocks:
+    value: 4
+algo.optimizer.kwargs.lr:
+    value: 1e-05
+algo.optimizer.name:
+    value: adam
+algo.target_update_interval:
+    value: 4
+augment:
+    value: false
+baseline.annealing_num_steps:
+    value: 1000
+baseline.batch_size:
+    value: 8192
+baseline.buffer_device:
+    value: cpu
+baseline.buffer_size:
+    value: 10000
+baseline.eps_end:
+    value: 0.1
+baseline.eps_init:
+    value: 1
+baseline.gamma:
+    value: 0.95
+baseline.max_grad_norm:
+    value: 0.5
+baseline.n_optim:
+    value: 8
+baseline.name:
+    value: dqn
+baseline.num_channels:
+    value: 32
+baseline.num_residual_blocks:
+    value: 3
+baseline.optimizer.kwargs.lr:
+    value: 0.0005
+baseline.optimizer.name:
+    value: adam
+baseline.target_update_interval:
+    value: 4
+board_size:
+    value: 15
+device:
+    value: cuda
+epochs:
+    value: 7000
+needbaseline:
+    value: false
+num_envs:
+    value: 512
+out_device:
+    value: cpu
+run_dir:
+    value: null
+save_interval:
+    value: 1000
+seed:
+    value: 0
+steps:
+    value: 4
+wandb.group:
+    value: 15_15_dqn_InRL
+wandb.mode:
+    value: online
+wandb.project:
+    value: gomoku_rl

@@ -1,0 +1,27 @@
+name: dqn
+
+buffer_size: 100_000
+buffer_device: cpu
+batch_size: 8192
+gamma: 0.95
+
+max_grad_norm: 0.5
+
+eps_init: 1
+eps_end: 0.01
+annealing_num_steps: 10000
+
+
+target_update_interval: 4
+
+n_optim: 8
+
+
+optimizer:
+  name: adam
+  kwargs:
+    lr: 1e-5
+
+
+num_channels: 32
+num_residual_blocks: 3

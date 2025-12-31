@@ -1,0 +1,28 @@
+seed: 0
+num_envs: 512
+board_size: 15
+device: cuda
+out_device: cpu
+run_dir:
+
+augment: false # SAC dùng Replay Buffer nên Augment ở đây không hiệu quả bằng Augment lúc sample từ Buffer (nhưng để false cũng ok)
+
+epochs: 10001 # SAC cần nhiều epoch hơn PPO một chút vì nó là Off-policy
+steps: 8      # Tăng lên chút để gom data nhanh hơn (4096 mẫu/epoch)
+save_interval: 1000
+
+# Comment lại vì train mới
+# black_checkpoint: ...
+# white_checkpoint: ...
+
+needbaseline: false # Giai đoạn đầu train Self-play thì chưa cần baseline vội
+
+wandb:
+  group: ${board_size}_${board_size}_${algo.name}_InRL
+  project: gomoku_rl
+  mode: online
+
+defaults:
+  - _self_
+  - algo: sac      # Trỏ vào file configs/algo/sac.yaml
+  - baseline: sac  # Đối thủ

@@ -1,0 +1,36 @@
+name: sac
+
+# Replay Buffer
+buffer_size: 100_000
+buffer_device: cpu
+batch_size: 2048 # SAC có thể dùng batch nhỏ hơn PPO
+
+# Algorithm parameters
+gamma: 0.99
+polyak: 0.995 # Hệ số soft update (1 - tau)
+alpha_init: 1.0 # Nhiệt độ entropy ban đầu (cao để khám phá)
+target_entropy_weight: 0.98 # Tinh chỉnh mục tiêu entropy
+
+target_update_interval: 1
+n_optim: 4 # Số lần update trên mỗi lần thu thập data
+max_grad_norm: 1.0
+
+# Neural Network
+num_channels: 64
+num_residual_blocks: 4
+
+# Optimizers (SAC thường dùng learning rate khác nhau cho actor/critic)
+optimizer_actor:
+  name: adam
+  kwargs:
+    lr: 3e-4
+
+optimizer_critic:
+  name: adam
+  kwargs:
+    lr: 3e-4
+
+optimizer_alpha:
+  name: adam
+  kwargs:
+    lr: 3e-4

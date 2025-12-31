@@ -1,0 +1,40 @@
+{
+  "os": "Windows-10-10.0.22621-SP0",
+  "python": "CPython 3.10.1",
+  "startedAt": "2025-12-27T14:44:34.761374Z",
+  "program": "C:\\Users\\admin\\.vscode\\gomoku_rl\\scripts\\train_InRL.py",
+  "codePath": "scripts\\train_InRL.py",
+  "codePathLocal": "scripts\\train_InRL.py",
+  "git": {
+    "remote": "https://github.com/ngthtuvp2005/Gomoku.git",
+    "commit": "86ca6ba23fe60cea77b3f23a474d413b4368963b"
+  },
+  "email": "zangdo20052014@gmail.com",
+  "root": "C:\\Users\\admin\\.vscode\\gomoku_rl",
+  "host": "DESKTOP-NO8KHTU",
+  "executable": "C:\\Users\\admin\\.vscode\\gomoku_rl\\.venv\\Scripts\\python.exe",
+  "cpu_count": 8,
+  "cpu_count_logical": 12,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "219509944320",
+      "used": "138932760576"
+    }
+  },
+  "memory": {
+    "total": "25456627712"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "memoryTotal": "6439305216",
+      "cudaCores": 2560,
+      "architecture": "Ada",
+      "uuid": "GPU-4a451990-68d0-d185-a517-a320e153c2e9"
+    }
+  ],
+  "cudaVersion": "12.7",
+  "writerId": "a2g6jle4rs6u3fbqzpn32x9hzcrx6dxv"
+}

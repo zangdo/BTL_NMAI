@@ -1,0 +1,21 @@
+{
+  "os":  "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+  "python":  "CPython 3.10.19",
+  "startedAt":  "2025-11-12T15:12:30.945693Z",
+  "args":  [
+    "device=gpu",
+    "wandb.mode=online"
+  ],
+  "program":  "/home/huongtt/Gomoku/scripts/train_InRL.py",
+  "codePath":  "scripts/train_InRL.py",
+  "codePathLocal":  "scripts/train_InRL.py",
+  "git":  {
+    "remote":  "https://github.com/ngthtuvp2005/Gomoku",
+    "commit":  "86ca6ba23fe60cea77b3f23a474d413b4368963b"
+  },
+  "email":  "zangdo20052014@gmail.com",
+  "root":  "/home/huongtt/Gomoku",
+  "host":  "rtxa6000",
+  "executable":  "/home/huongtt/miniconda3/envs/gomoku/bin/python",
+  "writerId":  "9qppzqnaby76gxjzdq5bybmt6de6tpr5"
+}

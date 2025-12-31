@@ -1,0 +1,16 @@
+board_size: 15
+checkpoints:
+  - pretrained_models/${board_size}_${board_size}/${algo.name}/0.pt
+  - pretrained_models/${board_size}_${board_size}/${algo.name}/1.pt
+  - pretrained_models/${board_size}_${board_size}/${algo.name}/2.pt
+  - pretrained_models/${board_size}_${board_size}/${algo.name}/3.pt
+
+device: cpu
+human_black: true
+
+grid_size: 56
+piece_radius: 24
+
+defaults:
+  - algo: ppo
+  - _self_

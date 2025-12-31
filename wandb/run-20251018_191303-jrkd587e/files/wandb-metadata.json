@@ -1,0 +1,53 @@
+{
+  "os":  "Linux-6.8.0-84-generic-x86_64-with-glibc2.39",
+  "python":  "CPython 3.10.18",
+  "startedAt":  "2025-10-18T12:13:03.028194Z",
+  "args":  [
+    "num_envs=1024",
+    "device=cuda",
+    "epochs=500",
+    "wandb.mode=online"
+  ],
+  "program":  "/home/huongtt/Zang/gomoku_rl/scripts/train_InRL.py",
+  "codePath":  "scripts/train_InRL.py",
+  "codePathLocal":  "scripts/train_InRL.py",
+  "git":  {
+    "remote":  "https://github.com/ngthtuvp2005/Gomoku.git",
+    "commit":  "ca7b826b637e7b5eee7180843ccc3e99b7b1c8c6"
+  },
+  "email":  "zangdo20052014@gmail.com",
+  "root":  "/home/huongtt/Zang/gomoku_rl",
+  "host":  "rtxa6000",
+  "executable":  "/home/huongtt/miniconda3/envs/gomoku/bin/python",
+  "cpu_count":  8,
+  "cpu_count_logical":  16,
+  "gpu":  "NVIDIA RTX A6000",
+  "gpu_count":  2,
+  "disk":  {
+    "/":  {
+      "total":  "1964636102656",
+      "used":  "1869798883328"
+    }
+  },
+  "memory":  {
+    "total":  "134708895744"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA RTX A6000",
+      "memoryTotal":  "51527024640",
+      "cudaCores":  10752,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-59430f48-5bbb-6fa3-1e1c-39b0fd176c69"
+    },
+    {
+      "name":  "NVIDIA RTX A6000",
+      "memoryTotal":  "51527024640",
+      "cudaCores":  10752,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-0cfe36fc-d9b3-83b6-0bb8-bcabf9bb8e3b"
+    }
+  ],
+  "cudaVersion":  "12.4",
+  "writerId":  "b7pp7hl8qb5gdhh2io9meplermib04y1"
+}

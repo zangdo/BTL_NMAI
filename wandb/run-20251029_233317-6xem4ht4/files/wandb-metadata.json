@@ -1,0 +1,40 @@
+{
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "CPython 3.10.0",
+  "startedAt": "2025-10-29T16:33:17.273755Z",
+  "program": "C:\\Users\\admin\\.vscode\\gomoku_rl\\tests\\test_ability.py",
+  "codePath": "tests\\test_ability.py",
+  "codePathLocal": "tests\\test_ability.py",
+  "git": {
+    "remote": "https://github.com/ngthtuvp2005/Gomoku.git",
+    "commit": "ca7b826b637e7b5eee7180843ccc3e99b7b1c8c6"
+  },
+  "email": "zangdo20052014@gmail.com",
+  "root": "C:\\Users\\admin\\.vscode\\gomoku_rl",
+  "host": "MSI",
+  "executable": "C:\\Users\\admin\\.vscode\\gomoku_rl\\.venv\\scripts\\python.exe",
+  "cpu_count": 8,
+  "cpu_count_logical": 12,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "487606710272",
+      "used": "196284928000"
+    }
+  },
+  "memory": {
+    "total": "25456627712"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "memoryTotal": "6439305216",
+      "cudaCores": 2560,
+      "architecture": "Ada",
+      "uuid": "GPU-4a451990-68d0-d185-a517-a320e153c2e9"
+    }
+  ],
+  "cudaVersion": "12.7",
+  "writerId": "b9833cwzgkgb1of272ygh5fm8d8zjes2"
+}

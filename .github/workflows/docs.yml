@@ -1,0 +1,19 @@
+name: Deploy Sphinx documentation to Pages
+
+on:
+  push:
+    branches: [main] # branch to trigger deployment
+
+jobs:
+  pages:
+    runs-on: ubuntu-22.04
+    steps:
+    - id: deployment
+      uses: hesic73/pages@v3
+      with:
+        publish: false
+        module_path: gomoku_rl
+    - uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ${{ steps.deployment.outputs.artifact }}
